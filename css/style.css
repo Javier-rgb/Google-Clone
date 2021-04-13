@@ -1,3 +1,5 @@
+/*GENERAL*/
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,44 +10,84 @@ html{
     font-size: 62.5%;
 }
 
-.header-nav{
-    background-color: aqua;
-}
-
-.content{
-    background-color: blue;
-}
-
-.footer-nav1{
-    background-color: blueviolet;
-}
-
-.footer-nav2{
-    background-color: chartreuse;
-}
-
-.footer-nav1, .footer-nav2{
-    width: 50%;
+/*  Header  */
+.header{
+    display: flex;
+    height: 5vh;
 }
 
 .header-nav{
     width: 100%;
 }
 
-.content{
-    width: 100vw;
-    height: 80vh;
+.header-nav_ul{
+    display: flex;
+    float: right;
 }
+
+.header-nav_ul li{
+    display: inline-block;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.header-nav_ul li a{
+    text-decoration: none;
+    color: black;
+}
+/*  Main    */
+
+.content{
+    background-color: white;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content section{
+    margin-bottom: 25px;
+}
+
+.searchbar input{
+    width: 500px;
+    height: 25px;
+}
+
+.searchbuttons{
+    justify-content: center;
+}
+
+.searchbuttons button{
+    width: 200px;
+}
+
+/*  Footer  */
 
 .footer{
     display: flex;
-    height: 10vh;
+    height: 5vh;
 }
 
-.header{
-    display: flex;
-    height: 10vh;
+.footer-nav1, .footer-nav2{
+    width: 50%;
 }
-.header-nav{
-    order: 2;
+
+.footer-nav_ul1 li, .footer-nav_ul2 li{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.footer-nav_ul2{
+    display: flex;
+    float: right;
+    /*text-align: right;*/
+}
+
+.footer-nav_ul1 li a, .footer-nav_ul2 li a{
+    text-decoration: none;
+    color: black;
 }
