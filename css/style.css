@@ -7,3 +7,45 @@
 html{
     font-size: 62.5%;
 }
+
+.header-nav{
+    background-color: aqua;
+}
+
+.content{
+    background-color: blue;
+}
+
+.footer-nav1{
+    background-color: blueviolet;
+}
+
+.footer-nav2{
+    background-color: chartreuse;
+}
+
+.footer-nav1, .footer-nav2{
+    width: 50%;
+}
+
+.header-nav{
+    width: 100%;
+}
+
+.content{
+    width: 100vw;
+    height: 80vh;
+}
+
+.footer{
+    display: flex;
+    height: 10vh;
+}
+
+.header{
+    display: flex;
+    height: 10vh;
+}
+.header-nav{
+    order: 2;
+}
