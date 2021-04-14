@@ -1,93 +1,53 @@
-/*GENERAL*/
+/* General Tags */
 
-*{
-    box-sizing: border-box;
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Body */
+body {
     margin: 0;
     padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-html{
-    font-size: 62.5%;
-}
-
-/*  Header  */
-.header{
-    display: flex;
-    height: 5vh;
-}
-
-.header-nav{
+/* Header */
+header {
     width: 100%;
+    height: 60px;
 }
 
-.header-nav_ul{
+header nav {
     display: flex;
-    float: right;
+    justify-content: flex-end;
 }
 
-.header-nav_ul li{
-    display: inline-block;
-    font-size: 2rem;
-    margin-right: 1rem;
-}
-
-.header-nav_ul li a{
-    text-decoration: none;
-    color: black;
-}
-/*  Main    */
-
-.content{
-    background-color: white;
-    width: 100vw;
-    height: 90vh;
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    list-style: none;
 }
 
-.content section{
-    margin-bottom: 25px;
+nav .nav-right-section a {
+    color: black;
+    margin-right: 10px;
 }
 
-.searchbar input{
-    width: 500px;
+nav .nav-right-section .menu-icon {
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
     height: 25px;
 }
 
-.searchbuttons{
-    justify-content: center;
-}
-
-.searchbuttons button{
-    width: 200px;
-}
-
-/*  Footer  */
-
-.footer{
-    display: flex;
-    height: 5vh;
-}
-
-.footer-nav1, .footer-nav2{
-    width: 50%;
-}
-
-.footer-nav_ul1 li, .footer-nav_ul2 li{
-    display: inline-block;
-    font-size: 1.5rem;
-    margin-right: 1rem;
-}
-
-.footer-nav_ul2{
-    display: flex;
-    float: right;
-    /*text-align: right;*/
-}
-
-.footer-nav_ul1 li a, .footer-nav_ul2 li a{
-    text-decoration: none;
-    color: black;
+nav .nav-right-section img {
+    border-radius: 50%;
+    margin-left: 10px;
 }
